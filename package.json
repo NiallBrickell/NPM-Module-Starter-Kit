@@ -1,0 +1,49 @@
+{
+  "name": "npm-module-starter-kit",
+  "version": "0.0.1",
+  "description": "A basic starter to get you quicking building an ES6 npm module.",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config webpack.conf",
+    "preversion": "npm test",
+    "test": "karma start karma.conf",
+    "test:dev": "karma start karma.conf --watch",
+    "version": "npm run build && git add -A dist"
+  },
+  "keywords": [
+    "npm",
+    "starter",
+    "es6"
+  ],
+  "author": "Niall Brickell",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.14.0",
+    "babel-core": "^6.14.0",
+    "babel-loader": "^6.2.5",
+    "babel-polyfill": "^6.13.0",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "chai": "^3.5.0",
+    "debug": "^2.2.0",
+    "dirty-chai": "^1.2.2",
+    "eslint": "^3.4.0",
+    "eslint-config-airbnb": "^10.0.1",
+    "eslint-plugin-chai-expect": "^1.1.1",
+    "eslint-plugin-import": "^1.14.0",
+    "eslint-plugin-jsx-a11y": "^2.2.0",
+    "eslint-plugin-mocha": "^4.5.0",
+    "eslint-plugin-react": "^6.2.0",
+    "karma": "^1.2.0",
+    "karma-babel-preprocessor": "^6.0.1",
+    "karma-coverage": "^1.1.1",
+    "karma-mocha": "^1.1.1",
+    "karma-mocha-reporter": "^2.1.0",
+    "karma-phantomjs-launcher": "^1.0.1",
+    "karma-webpack": "^1.8.0",
+    "mocha": "^3.0.2",
+    "sinon": "^1.17.5",
+    "webpack": "^1.13.2",
+    "yargs": "^5.0.0"
+  }
+}

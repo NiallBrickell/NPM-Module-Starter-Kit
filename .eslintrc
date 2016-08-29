@@ -1,0 +1,28 @@
+{
+	"extends": "airbnb",
+	"env": {
+		"browser": true,
+		"node": true,
+		"mocha": true
+	},
+	"plugins": [
+		"chai-expect",
+		"mocha"
+	],
+	"parserOptions":{
+			"ecmaFeatures": {
+					"experimentalObjectRestSpread": true
+			}
+	},
+	"globals": {
+		"expect": true,
+    "assert": true,
+    "should": true,
+		"sinon": true
+	},
+	"rules": {
+	  "indent": ["error", "tab"],
+	  "react/jsx-indent-props": ["error", "tab"],
+	  "react/jsx-indent": ["error", "tab"]
+	}
+}
